@@ -1,0 +1,4 @@
+<name>西施</name><age>20</age><height>166</height><sc>一般</sc><yz>漂亮</yz>
+<name>王昭君</name><age>18</age><height>160</height><sc>火辣</sc><yz>一般</yz>
+<name>杨玉环</name><age>22</age><height>177</height><sc>一般</sc><yz>漂亮</yz>
+<name>陈圆圆</name><age>26</age><height>159</height><sc>火辣</sc><yz>不行</yz>
