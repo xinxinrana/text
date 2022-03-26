@@ -1,8 +1,6 @@
 //友元函数
 #include<stdio.h>
 
-ma
-
 
 class Box
 {
