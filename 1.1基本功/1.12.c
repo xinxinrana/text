@@ -1,7 +1,4 @@
-/*
- *  程序名：book43.c，此程序演示采用for循环语句和二维数组结合使用
- *  作者：C语言技术网(www.freecplus.net) 日期：20190525
- */
+//二维数组在for中的调用
 #include <stdio.h>
 #include <string.h>
 

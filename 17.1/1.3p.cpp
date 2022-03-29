@@ -1,4 +1,5 @@
-//菜鸟教程
+//来源：菜鸟教程
+//重载运算符的使用方法
 
 #include <iostream>
 using namespace std;

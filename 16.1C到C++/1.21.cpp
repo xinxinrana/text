@@ -1,4 +1,5 @@
-// 菜鸟教程  runoob.com 
+// 来源：菜鸟教程  runoob.com 
+// 构造函数示例
 #include <iostream>
  
 using namespace std;

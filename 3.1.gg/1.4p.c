@@ -1,7 +1,4 @@
-/*
- * 程序名：book145.c，此程序演示目录和文件的存取权限和状态信息
- * 作者：C语言技术网(www.freecplus.net) 日期：20190525
-*/
+//文件状态
 #include <stdio.h>
 #include <sys/stat.h>
 #include <unistd.h>

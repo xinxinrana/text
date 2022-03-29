@@ -1,7 +1,4 @@
-/*
- * 程序名：book124.c，此程序用于演示读取目录及其子目录下全部的文件信息
- * 作者：C语言技术网(www.freecplus.net) 日期：20190525
-*/
+//目录指针的使用
 #include <stdio.h>
 #include<string.h>
 #include <dirent.h>

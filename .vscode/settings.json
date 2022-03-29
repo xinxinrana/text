@@ -16,7 +16,11 @@
         "time_t.h": "c",
         "stdlib.h": "c",
         "stdbool.h": "c",
-        "1.6p.h": "c"
+        "1.6p.h": "c",
+        "cstdio": "cpp",
+        "limits": "cpp",
+        "type_traits": "cpp",
+        "fstream": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "C_Cpp.dimInactiveRegions": false

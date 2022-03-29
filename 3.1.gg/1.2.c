@@ -1,7 +1,4 @@
-/*
- * 程序名：book160.c，此程序演示errno全局变量和strerror函数。
- * 作者：C语言技术网(www.freecplus.net) 日期：20190525
-*/
+//错误erron 与错误的输出
 #include <stdio.h>
 #include <string.h>
 #include <errno.h>
