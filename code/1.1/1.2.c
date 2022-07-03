@@ -29,7 +29,7 @@ struct User *initUser()
 {
     struct User *user = (struct User *)malloc(sizeof(struct User));
     memset(user, 0, sizeof(User));
-    user->moviesHead = (struct Film *)malloc(sizeof( struct Film));
+    user->moviesHead = (struct Film *)malloc(sizeof(struct Film));
     user->moviesHead->isHave = 0;
     return user;
 }
@@ -45,7 +45,7 @@ struct User *addUser(struct User *useriterator)
 }
 
 //添加电影
-int addMovie(struct User *useriterator,const char *filmName,const long rating)
+int addMovie(struct User *useriterator, const char *filmName, const long rating)
 {
     struct Film *filmIterator = useriterator->moviesHead;
     int moviesCount = 0;
@@ -58,24 +58,25 @@ int addMovie(struct User *useriterator,const char *filmName,const long rating)
     filmIterator->rating = rating;
     filmIterator->isHave = 1;
     filmIterator->next = (struct Film *)malloc(sizeof(struct Film));
-    filmIterator->next->isHave =0;
+    filmIterator->next->isHave = 0;
     moviesCount++;
 
     return moviesCount;
 }
 
 //设置用户信息
-void setUserInfo(struct User *user,const struct User* userInfo){
+void setUserInfo(struct User *user, const struct User *userInfo)
+{
     user->id = userInfo->id;
-    memcpy(user->name,userInfo->name,SIZE_S);
+    memcpy(user->name, userInfo->name, SIZE_S);
 }
 
 //设置电影信息
-void setFilmInfo(struct Film *film,const struct Film *filmInfo){
+void setFilmInfo(struct Film *film, const struct Film *filmInfo)
+{
     film->rating = filmInfo->rating;
-    memcpy(film->title,filmInfo->title,SIZE_S);
+    memcpy(film->title, filmInfo->title, SIZE_S);
 }
-
 
 int main(int argc, char const *argv[])
 {
@@ -85,12 +86,11 @@ int main(int argc, char const *argv[])
     userIter = addUser(userIter);
     userIter = addUser(userIter);
 
-    int moviesCount = addMovie(userIter,"title",10L);
-    moviesCount = addMovie(userIter,"title",10L);
-    moviesCount = addMovie(userIter,"title",10L);
-    
-    printf("%d moviesCount\n",moviesCount);
+    int moviesCount = addMovie(userIter, "title", 10L);
+    moviesCount = addMovie(userIter, "title", 10L);
+    moviesCount = addMovie(userIter, "title", 10L);
 
+    printf("%d moviesCount\n", moviesCount);
 
     system("pause");
 
