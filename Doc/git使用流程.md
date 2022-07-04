@@ -10,12 +10,22 @@ git基础使用和速查手册
 
 ### 第一次配置
 
-```
+```c
 //下载安装，远程仓库注册
 //安全连接（ssh/令牌）							   //具体查看百度
 $ git init										//初始化git
 $ git remote add [git_name] [cloud_path]		//添加远程仓库
 $ git clone [cloud_path]						//克隆远程仓库到本地 
+```
+
+### 取消跟踪
+
+```c
+//add . 忽略列表：在.git水平目录下建立文件 .gitgnore 一行一个名称正则
+//				 仅对add . 有效 目的是忽略这个文件的添加
+$ git rm			//在git跟踪目录中删除即为取消跟踪
+$ git rm -cached [file_name]		//仅取消跟踪，文件后续不再相关
+$ git rm -f 	 [file_name]		//取消跟踪加删除文件
 ```
 
 
