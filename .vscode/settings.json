@@ -1,3 +1,27 @@
 {
-    "cmake.cmakePath": "/path/to/cmake"
+    "files.associations": {
+        "cmath": "cpp",
+        "stdio.h": "c",
+        "file.h": "c",
+        "libc-header-start.h": "c",
+        "stddef.h": "c",
+        "cstdlib": "c",
+        "*.tcc": "c",
+        "algorithm": "cpp",
+        "types.h": "c",
+        "stat.h": "c",
+        "unistd.h": "c",
+        "features.h": "c",
+        "struct_timespec.h": "c",
+        "time_t.h": "c",
+        "stdlib.h": "c",
+        "stdbool.h": "c",
+        "1.6p.h": "c",
+        "cstdio": "cpp",
+        "limits": "cpp",
+        "type_traits": "cpp",
+        "fstream": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.dimInactiveRegions": false
 }
