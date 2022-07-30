@@ -18,14 +18,51 @@ $ git remote add [git_name] [cloud_path]		//添加远程仓库
 $ git clone [cloud_path]						//克隆远程仓库到本地 
 ```
 
+### 日常最多
+
+```c
+$ git add .			//添加所有文件到索引（重复添加无妨）
+$ git commit -m "[massage]"		//提交到本地仓库
+$ git push			//配置好默认仓库的情况下直接上传到远程仓库
+$ git pull			//同步下载远程仓库
+$ git log			//显示提交信息（日志）
+$ git reset	[HEAD]	//回溯到HEAD节点 HEAD通常可以填版本号的前五位
+$ git checkout .	//放弃当前所有未提交的修改
+$ git checkout --[fileName]		//放弃特定文件的修改
+```
+
+
+
 ### 取消跟踪
 
 ```c
-//add . 忽略列表：在.git水平目录下建立文件 .gitgnore 一行一个名称正则
-//				 仅对add . 有效 目的是忽略这个文件的添加
+//.gitgnore   			//忽略列表：在.git水平目录下建立文件  一行一个名称正则
+//				 		//仅对add . 有效 目的是忽略这个文件的添加
 $ git rm			//在git跟踪目录中删除即为取消跟踪
 $ git rm -cached [file_name]		//仅取消跟踪，文件后续不再相关
 $ git rm -f 	 [file_name]		//取消跟踪加删除文件
+```
+
+### 忽略文件
+
+```C
+// 常用匹配规则
+// #：注释字符，类似于：//
+*.exe *.so			//表示不匹配后缀为这两个的文件
+[fileFolder]/		//表示比匹配文件夹名称为 fileFolder 的文件夹及其里面的内容
+[code*]/			//表示不皮匹配任何以code开头的文件夹
+```
+
+### 切换分支
+
+```C
+$ git beanch		//查看当前本地分支情况
+$ git remote show	//查看远程分情况
+$ git branch [local_name]	//新建本地分支 但是云端还未同步到本地，不要切换本地分支
+$ git fetch [git_name] [could_branch]:[local_branch]	//将云端分支拉取到本地库
+$ git checkout [local_name]	//切换本地分支，没有意外的话就会直接切换到分支的目录结构了
+$ git push [git_name] [local_branch]:[could_branch]		//上传项目
+$ git push -u [git_name] [local_branch]:[could_branch]	//上传并设置默认，下次直接git push
 ```
 
 
@@ -99,7 +136,8 @@ $ git push -u [git_name] [local_branch]		//设定默认推送分支，之后可�
 
 ```C
 $ git branch 		//列出本地分支
-$ git branch [new_local_branch]		//新建本地分支
+$ git branchout		//表示分支切换，只是将HEAD指针移动，不会有实际作用
+$ git branchout [new_local_branch]		//新建本地分支
 $ git checkout [local_branch]		//切换活动分支，并将工作区设为local_beanch的最新节点
 $ git checkout -b [new_local_branch]//新建本地分支并切换
 $ git checkout -d [local_branch]	//删除本地分支
@@ -125,7 +163,10 @@ $ git commit -m "XXX冲突解决"  	 //冲突解决后需要commit一次，所�
 ```
 $ git log			//查看历史提交
 $ git log --oneline //简略形式查看历史记录
+$ git log --graph	//以拓扑图形式展示版本修改关系
 $ git blame [file_name]			//指定文件的修改记录
+$ git reset [HEAD]				//回退到某一版本
+$ git reset [HEAD] [fileName]	//回退某一文件到某一版本	
 ```
 
 ### 版本发布（标签）
@@ -142,8 +183,6 @@ $ git tag -d [tag_name]				//删除标签
 
 
 ## 图像原理
-
-![git学习](git学习.png)
 
 使用流程
 

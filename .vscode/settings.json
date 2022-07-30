@@ -2,6 +2,8 @@
     "cmake.cmakePath": "/path/to/cmake",
     "files.associations": {
         "*.hs": "bat",
-        "ostream": "cpp"
-    }
+        "ostream": "cpp",
+        "iostream": "cpp"
+    },
+    "cmake.configureOnOpen": false
 }
