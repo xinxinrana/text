@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>#include</Title>    <!-- 代码片段名，不重要 -->
+			<Shortcut>include</Shortcut>    <!-- 代码关键词，很重要 -->
+			<Description>包含</Description>  <!-- 说明 -->
+			<Author>xy</Author>  <!-- 作者 -->
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>  <!-- 选定值 例如代码段“” 之后自动包裹起来 -->
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>ID</ID>
+					<ToolTip>包含内容</ToolTip>
+					<Default>head</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+        <![CDATA[#include $ID$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

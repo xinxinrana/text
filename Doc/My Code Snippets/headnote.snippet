@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>headnote</Title>    <!-- 代码片段名，不重要 -->
+			<Shortcut>headnote</Shortcut>    <!-- 代码关键词，很重要 -->
+			<Description>头文件注释模板</Description>  <!-- 说明 -->
+			<Author>xy</Author>  <!-- 作者 -->
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>  <!-- 选定值 例如代码段“” 之后自动包裹起来 -->
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>header</ID>
+					<ToolTip>头文件名</ToolTip>
+					<Default>header</Default>
+				</Literal>
+				<Literal>
+					<ID>Purpose</ID>
+					<ToolTip>模块的作用</ToolTip>
+					<Default>Purpose</Default>
+				</Literal>
+				<Literal>
+					<ID>Author</ID>
+					<ToolTip>作者</ToolTip>
+					<Default>Author</Default>
+				</Literal>
+				<Literal>
+					<ID>Created</ID>
+					<ToolTip>要计算的表达式</ToolTip>
+					<Default>date</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp"><![CDATA[/////////////////////////////////////////////////////////////////////////////
+// Name:       $header$.h
+// Purpose:    $Purpose$
+// Author:     $Author$
+// Modified by: 
+// Created:    $Created$
+// RCS-ID:      
+// Copyright:   
+// Licence:   1.0  
+/////////////////////////////////////////////////////////////////////////////
+				]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>facnote</Title>    <!-- 代码片段名，不重要 -->
+			<Shortcut>facnote</Shortcut>    <!-- 代码关键词，很重要 -->
+			<Description>函数（通用）注释模板</Description>  <!-- 说明 -->
+			<Author>xy</Author>  <!-- 作者 -->
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>  <!-- 选定值 例如代码段“” 之后自动包裹起来 -->
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>Class</ID>
+					<ToolTip>所属的类</ToolTip>
+					<Default>Class</Default>
+				</Literal>
+				<Literal>
+					<ID>Name</ID>
+					<ToolTip>函数名</ToolTip>
+					<Default>Name</Default>
+				</Literal>
+				<Literal>
+					<ID>Function</ID>
+					<ToolTip>说明</ToolTip>
+					<Default>Function</Default>
+				</Literal>
+				<Literal>
+					<ID>data1</ID>
+					<ToolTip>传参1</ToolTip>
+					<Default>data1</Default>
+				</Literal>
+        <Literal>
+          <ID>data2</ID>
+          <ToolTip>传参2</ToolTip>
+          <Default>data1</Default>
+        </Literal>
+        <Literal>
+          <ID>note1</ID>
+          <ToolTip>说明1</ToolTip>
+          <Default>note1</Default>
+        </Literal>
+        <Literal>
+          <ID>note2</ID>
+          <ToolTip>说明2</ToolTip>
+          <Default>note2</Default>
+        </Literal>
+        <Literal>
+          <ID>param</ID>
+          <ToolTip>参数</ToolTip>
+          <Default>param</Default>
+        </Literal>
+			</Declarations>
+			<Code Language="cpp">
+        <![CDATA[/****************
+*Class：       $Class$
+*Name：        $Name$
+*Function：    $Function$
+*Parameters(参数说明)
+*$data1$:      $note1$
+*$data2$:      $note2$
+***************/
+void $Name$($param$)
+{
+
+}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
