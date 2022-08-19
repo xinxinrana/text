@@ -3,7 +3,10 @@
     "files.associations": {
         "*.hs": "bat",
         "ostream": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "array": "cpp",
+        "regex": "cpp",
+        "string": "cpp"
     },
     "cmake.configureOnOpen": false
 }
