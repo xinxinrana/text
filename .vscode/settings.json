@@ -6,7 +6,9 @@
         "iostream": "cpp",
         "array": "cpp",
         "regex": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "*.tcc": "cpp",
+        "list": "cpp"
     },
     "cmake.configureOnOpen": false
 }
